@@ -56,10 +56,15 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
+  margin: 0px;
+  /*adjusting background image*/
   background-image: url("../src/img/798.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center, bottom;
-  background-color: rgba(0,0,0,.4);}
+  background-position: center;
+  position: relative;
+  min-height: 250px;
+  height: auto;}
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -107,30 +112,39 @@ a {
     font-size: 1rem; } }
 
 .nav-bar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-}
-
-li {
-  float: left;
-  width: fill;
-}
-
-li a {
-  display: block;
-  color: white;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(1,1,1,0.3);
+}
+.nav-bar ul {
+  /*remove bullet points*/
+  list-style-type: none;
+  padding: 10px 40px 10px 40px;
+  background: #333;
+  /*make the navBar 80% transparent*/
+  opacity: 0.8;
+
+}
+.nav-bar li {
+  /*from a vertical list to all in a line*/
+  display: inline;
+  /*gives us a little space between items*/
+  /*The format for padding is top right bottom left*/
+
+}
+.nav-bar li a{
+  color: white;
+  padding: 10px 20px;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
+.nav-bar li a:hover {
   background-color: #111;
 }
+
 .main-content :first-child {
   margin-top: 0; }
 .main-content img {
@@ -270,3 +284,19 @@ li a:hover {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 25px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;}
