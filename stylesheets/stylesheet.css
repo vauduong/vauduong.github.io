@@ -264,7 +264,8 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  border-top: solid 1px #eff0f1;
+  text-align: center;}
 
 .site-footer-owner {
   display: block;
@@ -294,6 +295,12 @@ a {
     justify-content: space-between;
     flex: 1 0 500px;}
 
+.card-image {
+  max-height: 300px;
+  width: auto;
+
+}
+
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
@@ -301,7 +308,7 @@ a {
 /* Add some padding inside the card container */
 .container {
     padding: 2px 16px;}
-    
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -318,4 +325,13 @@ a {
     .card {
         max-width: calc(25% - 1em);
     }
+}
+
+#poster-pdf{
+  height: 615px;
+  padding-bottom: 25px;
+}
+#doc-pdf{
+  height: 800px;
+  padding-bottom: 25px;
 }
