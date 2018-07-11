@@ -1,0 +1,8 @@
+<?php
+    $files = scandir('../src/img/art/breadth/concentration/');
+    foreach($files as $file) {
+        if($file !== "." && $file !== "..") {
+            echo "<img src='$file' />";
+        }
+    }
+?>
