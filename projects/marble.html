@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>vauduong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <a href="../index.html">
+        <h1 class="project-name">vauduong</h1>
+        <h2 class="project-tagline">Aspiring engineer</h2>
+      </a>
+      <ul class="nav-bar">
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+    </section>
+
+    <section class="main-content">
+
+      <h1>Marble Run</h1>
+      <p>
+        As part of Stanford's ME102 Foundations of Product Realization Course, I worked in a team of 4 to design a marble run course. We brainstormed our parts together, then assembled them in a Solidworks Assembly. Here are my two pieces, as well as some drawings, inspiration, and low-fidelity testing.
+      </p>
+      <h2>Tornado</h2>
+      <p>
+        Inspiration:
+  Since we had fulfilled the movement type requirements, I had some freedom to create a wildcard segment. I was inspired by the Tornado, one of the biggest slides at Six Flags Great America, a theme park near where I live. Riders on 4-person floats shoot down a 75ft slide into a 60ft wide tunnel, rocking back and forth a few times before exiting.
+</p>
+
+<img src="../src/img/projects/tornado-wildcard.png" alt="Avatar" style="width:100%">
+<p>Question: What is the best angle of the funnel to get satisfying movements of the marble?
+	-Prototyping: The funnel is a cone with the end snipped. Create a funnel out of thin cardboard, taping the ends together. Hold the funnel at different angles and try dropping in the marble. Record the movements and pick the one deemed most satisfying (Shoot for 3 back and forth movements). When designing, calculate the right height of the supports to allow the desired angle.
+Lessons learned from each prototype
+An angle of about 15 degrees allows for a pretty satisfying set of movements from the marble. Larger, and the marble simply slides towards the exit. Smaller, and there is not very much rotational motion. However, since the cardboard funnel is not made out of PLA, it is worth simulating again in solidworks since the movement of the marble may not be the same.
+The supports of the tornado slide should accommodate an angle of about 15 degrees.
+</p>
+<h2>Prototyping videos:</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/klr8skebzkU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+  Final CAD Assembly, with #10 nuts, screws, and heat inserts (Thanks to Tom for the heat insert suggestion!)
+https://workbench.grabcad.com/workbench/projects/gcByERxX5DRSyYJTJ35Yre182_HBt7k6spcu5M5dZx-Yrf#/space/gcWY9tyXhmKx6uTmHzRxLGTOUVaeSRH8pmgIQdDk6bgboK
+</p>
+<img src="../src/img/projects/tornado-cad.png" alt="Avatar" style="width:100%">
+      <h2>Elevator: Manual Movement</h2>
+      <p>Inspiration: Since most of the marble run segments rely on gravity, much of the marble run involves the marble traveling from top to bottom of the bounding box. I wanted to create a segment that did not take up much space, and could be placed near the middle of the marble run. Using manual motion, the marble could be translated from bottom to top, allowing more freedom to fall in subsequent segments. I was inspired by an elevator shaft, and prototyped an elevator shaft with a slot to move a ramp.
+</p>
+      <img src="../src/img/projects/elevator-diagram.png" alt="Avatar" style="width:100%">
+      <p>Question: What height should the ramp be to ensure that the marble is able to roll in and out?
+	-Prototyping: First, create a prototype shaft out of cardboard and tape, cutting out the required holes and slots as described above. The bottom should be hollow to allow insertion of the ramp. Experiment with a thin sheet of cardboard (ie from a cereal box) about 1.2 in wide. Fold the cardboard so it forms a ramp with varying heights (0.1 in, 0.2 in, 0.3 in, 0.4 in, 0.5 in, and more if necessary). Note which one consistently allows the marble to roll out without getting stuck.
+Lessons learned from each prototype:
+The ball was able to roll out when the height was 0.1 inches, but a relatively shallow angle of about 10 degrees (0.2in) allowed for smoother rolling. Rather, the largest problem faced in this prototype was bending of the walls and friction preventing the ramp from moving up. When prototyping with rigid materials such as acrylic and PLA plastic, this is unlikely to occur, but it is important to remember to have enough space for the ramp to slide freely within the shaft.
+As the design of the elevator shaft is verified to work, the next iteration for this prototype would incorporate supports into the bottom of bounding box.
+</p>
+
+<h2>Prototyping videos:</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ma_kS_JUHvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Final CAD Assembly, with #10 nuts and screws
+https://workbench.grabcad.com/workbench/projects/gcByERxX5DRSyYJTJ35Yre182_HBt7k6spcu5M5dZx-Yrf#/space/gcWY9tyXhmKx6uTmHzRxLGTOUVaeSRH8pmgIQdDk6bgboK</p>
+      <img src="../src/img/projects/elevator-cad.png" alt="Avatar" style="width:100%">
+
+
+    <footer class="site-footer"> Vivian Auduong </footer>
+  </section>
+
+
+
+
+  </body>
+</html>
